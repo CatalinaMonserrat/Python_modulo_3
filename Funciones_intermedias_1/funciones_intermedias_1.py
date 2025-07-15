@@ -2,43 +2,60 @@
 
 matriz = [ [10, 15, 20], [3, 7, 14] ]
 
+# Cambia el valor de 3 en matriz por 6. Una vez realizado el cambio tu matriz debería ser: [ [10, 15, 20], [6, 7, 14] ]
+
+def actualizar_matriz(matriz, fila, columna, nuevo_valor):
+    matriz[fila][columna] = nuevo_valor
+    return matriz
+
+resultado = actualizar_matriz(matriz, 1, 0, 6)
+
+print(matriz)
+print ()
+
 cantantes = [
    {"nombre": "Ricky Martin", "pais": "Puerto Rico"},
    {"nombre": "Chayanne", "pais": "Puerto Rico"}
 ]
 
+# Cambia el nombre del primer cantante de “Ricky Martin” a “Enrique Martin Morales”
+
+def actualizar_cantantes(cantantes, nombre, nuevo_nombre):
+    cantantes[0][nombre] = nuevo_nombre
+    return cantantes
+
+cantantes = actualizar_cantantes(cantantes, "nombre", "Enrique Martin Morales")
+print(cantantes)
+print ()
+
+
+#En ciudades, cambia “Cancún” por “Monterrey”
 ciudades = {
    "México": ["Ciudad de México", "Guadalajara", "Cancún"],
    "Chile": ["Santiago", "Concepción", "Viña del Mar"]
 }
 
-coordenadas = [
-   {"latitud": 8.2588997, "longitud": -84.9399704}
-]
-
-# Cambia el valor de 3 en matriz por 6. Una vez realizado el cambio tu matriz debería ser: [ [10, 15, 20], [6, 7, 14] ]
-
-matriz[1][2] = 6
-
-print(matriz)
-
-# Cambia el nombre del primer cantante de “Ricky Martin” a “Enrique Martin Morales”
-
-cantantes[0]["nombre"] = "Enrique Martin Morales"
-
-print(cantantes)
-
-#En ciudades, cambia “Cancún” por “Monterrey”
-
-ciudades["México"][2] = "Monterrey"
+def actualizar_ciudades(ciudades, pais, ciudad, nueva_ciudad):
+    ciudades[pais][ciudad] = nueva_ciudad
+    return ciudades
+ciudades = actualizar_ciudades(ciudades, "México", 2, "Monterrey")
 
 print(ciudades)
+print ()
 
 # En las coordenadas, cambia el valor de “latitud” por 9.9355431
 
-coordenadas[0]["latitud"] = 9.9355431
+coordenadas = [
+   {"latitud": 8.2588997, "longitud": -84.9399704}
+]
+def actualizar_coordenadas(coordenadas, latitud, nueva_latitud):
+    coordenadas[0][latitud] = nueva_latitud
+    return coordenadas
+
+coordenadas = actualizar_coordenadas(coordenadas, "latitud", 9.9355431)
 
 print(coordenadas)
+print ()
 
 # Iterar a través de una lista de diccionarios Crea la función iterarDiccionario(lista) que reciba una lista de diccionarios y recorra cada diccionario de la lista e imprima cada llave y el valor correspondiente. Por ejemplo:
 cantantes = [
@@ -56,7 +73,6 @@ def iterarDiccionario(lista):
         print ()
 
 iterarDiccionario(cantantes)
-
 
 #Obtener valores de una lista de diccionarios
 
