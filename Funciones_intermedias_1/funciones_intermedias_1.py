@@ -3,7 +3,6 @@
 matriz = [ [10, 15, 20], [3, 7, 14] ]
 
 # Cambia el valor de 3 en matriz por 6. Una vez realizado el cambio tu matriz debería ser: [ [10, 15, 20], [6, 7, 14] ]
-
 def actualizar_matriz(matriz, fila, columna, nuevo_valor):
     matriz[fila][columna] = nuevo_valor
     return matriz
