@@ -67,8 +67,11 @@ while True:
         ver_tareas()
     elif opcion == "3":
         ver_tareas()
-        indice = int(input("Ingresa el indice de la tarea completada: "))
-        marcar_completada_por_indice(indice)
+        try:
+            indice = int(input("Ingresa el indice de la tarea completada: "))
+            marcar_completada_por_indice(indice)
+        except ValueError:
+            print("Indice no valido")
     elif opcion == "4":
         ver_tareas()
         indice = int(input("Ingresa el indice de la tarea a eliminar: "))
