@@ -13,6 +13,7 @@ Este repositorio contiene los ejercicios realizados durante el Módulo 3 del boo
 ---
 
 ## Estructura del Repositorio
+
 Python_modulo_3/
 ├── Funciones_intermedias_1/ ← Ejercicios prácticos de funciones
 ├── Estructuras_intermedias/ ← Ejercicios con estructuras como listas y diccionarios
@@ -58,7 +59,7 @@ else:
 2. Abre la carpeta en tu editor favorito.
 3. Ejecuta los archivos .py en la terminal con: python ruta/del/archivo.py
 
-Autor
+## Autor
 Catalina Monserrat
 Bootcamp Desarrollo Web con Python/Django
 GitHub: @CatalinaMonserrat
