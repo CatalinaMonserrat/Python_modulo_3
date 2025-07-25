@@ -14,12 +14,16 @@ Este repositorio contiene los ejercicios realizados durante el Módulo 3 del boo
 
 ## Estructura del Repositorio
 
+```bash
 Python_modulo_3/
-├── Funciones_intermedias_1/ ← Ejercicios prácticos de funciones
-├── Estructuras_intermedias/ ← Ejercicios con estructuras como listas y diccionarios
-├── Ejercicio_condicionales/ ← Prácticas con condicionales
-├── Print_HolaMundo/ ← Primer script de prueba
+├── Funciones_intermedias_1/       ← Ejercicios prácticos de funciones
+│   ├── funciones_intermedias_1.py
+│   └── instrucciones.txt
+├── Estructuras_intermedias/       ← Ejercicios con estructuras como listas y diccionarios
+├── Ejercicio_condicionales/       ← Prácticas con condicionales
+├── Print_HolaMundo/               ← Primer script de prueba
 └── README.md
+```
 
 ---
 
@@ -60,6 +64,8 @@ else:
 3. Ejecuta los archivos .py en la terminal con: python ruta/del/archivo.py
 
 ## Autor
+```bash
 Catalina Monserrat
 Bootcamp Desarrollo Web con Python/Django
 GitHub: @CatalinaMonserrat
+```
